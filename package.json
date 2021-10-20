@@ -1,0 +1,24 @@
+{
+  "name": "html-css-deglingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Ratsimandresy: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@github.com/Ratsimandresy/Deglingo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ratsimandresy/Deglingo/issues"
+  },
+  "homepage": "https://github.com/Ratsimandresy/Deglingo#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
