@@ -1,0 +1,101 @@
+@import "./variables.css";
+
+@media screen and (min-width: 481px) {
+  .hero__intro {
+    width: 60%;
+  }
+  .section1 {
+    height: 1000px;
+  }
+  .section1__web,
+  .section1__graph,
+  .section1__app {
+    height: calc(var(--base-px) * 19.25);
+    width: calc(var(--base-px) * 28.5);
+  }
+}
+@media screen and (min-width: 1025px) {
+  header.header,
+  #main {
+    padding: 0 5%;
+  }
+  header.header {
+    justify-content: space-between;
+  }
+  .header__burgerMenu {
+    display: none;
+  }
+  nav.header__nav {
+    display: flex;
+  }
+  .hero {
+    padding-top: 0;
+    height: 600px;
+    flex-direction: row;
+    border-radius: calc(var(--base-px));
+  }
+  .hero__intro {
+    width: 50%;
+    height: 65%;
+    align-items: flex-start;
+    padding-left: calc(var(--base-px) * 4);
+  }
+  .hero__img {
+    top: 17%;
+    right: 9%;
+  }
+  .hero__intro h2,
+  .hero__intro :nth-child(2) {
+    text-align: start;
+  }
+  .hero__intro h2 {
+    font-size: calc(var(--base-px) * 2.2);
+  }
+  .hero__intro :nth-child(2) {
+    font-size: var(--base-px);
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: calc(var(--base-px) * 2);
+    height: 600px;
+  }
+  .section1__web,
+  .section1__graph,
+  .section1__app {
+    width: 100%;
+    height: 100%;
+  }
+  .section1__web {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__intro {
+    padding-left: calc(var(--base-px) * 6);
+  }
+}
+@media screen and (min-width: 1445px) {
+  header.header,
+  #main {
+    padding: 0 10%;
+  }
+  .hero__img {
+    right: 12%;
+  }
+  .section1 {
+    height: 750px;
+  }
+}
+@media screen and (min-width: 1884px) {
+  header.header,
+  #main {
+    padding: 0 13%;
+  }
+  .hero__img {
+    right: 15%;
+  }
+}

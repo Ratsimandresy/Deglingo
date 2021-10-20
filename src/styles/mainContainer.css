@@ -1,0 +1,112 @@
+@import "./variables.css";
+
+/** main section  */
+
+#main {
+  height: 100%;
+}
+
+/** hero section  */
+
+.hero {
+  position: relative;
+  height: 750px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--brand-color);
+  overflow-y: hidden;
+  padding-top: calc(var(--base-px) * 3);
+}
+.hero__intro {
+  /* background-color: aquamarine; */
+  padding: 0 var(--base-px);
+  height: calc(var(--base-px) * 18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero__intro h2,
+.hero__intro :nth-child(2) {
+  text-align: center;
+}
+.hero__intro h2 {
+  font-weight: 500;
+}
+.hero__intro :nth-child(2) {
+  font-size: small;
+}
+.hero__intro :nth-child(3) {
+  background-color: white;
+  width: calc(var(--base-px) * 8);
+  height: calc(var(--base-px) * 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.hero__intro :nth-child(3) a {
+  font-size: small;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1.2px;
+}
+.hero__img {
+  position: absolute;
+  top: 50%;
+}
+#phone {
+  filter: drop-shadow(20px -19px 25px #a04f3d);
+}
+
+/** section 1  */
+
+.section1__web,
+.section1__graph,
+.section1__app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(var(--base-px) * 14);
+  color: white;
+  letter-spacing: 4px;
+  border-radius: var(--base-px);
+}
+
+.section1 {
+  margin: calc(var(--base-px) * 5) 0;
+  height: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section1__web {
+  background-image: url("../assets/image1.png");
+}
+.section1__app {
+  background-image: url("../assets/image2.png");
+}
+.section1__graph {
+  background-image: url("../assets/image3.png");
+}
+.section1 article h2 {
+  font-weight: 500;
+}
+.section1 div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(var(--base-px) * 10.87);
+  font-size: small;
+}

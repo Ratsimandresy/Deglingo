@@ -1,0 +1,70 @@
+/** css imports */
+@import "./variables.css";
+@import "./mainContainer.css";
+@import "./responsive.css";
+
+/** reset settings */
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+/**---------------- HEADER ------------------  */
+/* common properties  */
+.header,
+.header__logo,
+.header__logo > p,
+.header__logo h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  /* background-color: aquamarine; */
+  height: calc(var(--base-px) * 5);
+}
+.header__logo {
+  /* flex: 0.6; */
+  /* background-color: brown; */
+  height: calc(var(--base-px) * 3.5);
+  padding-bottom: calc(var(--base-px) / 2);
+  width: calc(var(--base-px) * 11);
+}
+.header__logo > p,
+.header__logo h1 {
+  height: inherit;
+}
+.header__logo h1 {
+  text-transform: uppercase;
+  letter-spacing: calc(var(--base-px) / 3);
+  font-size: larger;
+  font-weight: 700;
+}
+.header__logo img {
+  width: calc(var(--base-px) * 1.1);
+}
+
+.header__nav {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: small;
+}
+.header__nav > p > a {
+  font-weight: 350;
+  text-decoration: none;
+  color: var(--light-black);
+}
+
+/**---------------- main ------------------  */
